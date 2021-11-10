@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Shoujo Dreamers</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Reenie+Beanie&family=Sail&display=swap" rel="stylesheet">
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	/* Style the body */
+	
+	body {
+		font-family: 'Sail', 'Reenie Beanie', 'Nanum Gothic';
+		margin: 0;
+	}
+	/* Header/logo Title */
+	
+	.header {
+		letter-spacing: 6px;
+		padding: 30px;
+		text-align: center;
+		background-color: black;
+		background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ddfea465-dc99-445a-9b1a-892e858cc40b/de64v9j-3c629594-b385-4603-b621-b10da28fde5f.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2RkZmVhNDY1LWRjOTktNDQ1YS05YjFhLTg5MmU4NThjYzQwYlwvZGU2NHY5ai0zYzYyOTU5NC1iMzg1LTQ2MDMtYjYyMS1iMTBkYTI4ZmRlNWYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wuRASAOD0FmwqsnFllw6RPKLH7snuKCIyTw5kkX_USo);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-attachment: scroll;
+		color: #5D2A42;
+	}
+	/* Increase the font size of the heading */
+	
+	.header h1 {
+		font-size: 100px;
+	}
+	/* Style the top navigation bar */
+	
+	.navbar {
+		overflow: hidden;
+		background-color: #5D2A42;
+	}
+	/* Style the navigation bar links */
+	
+	.navbar a {
+		float: left;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 20px;
+		text-decoration: none;
+	}
+	/* Right-aligned date */
+	
+	.navbar span.right {
+		float: right;
+		display: block;
+		color: #FFF9EC;
+		text-align: center;
+		padding: 14px 20px;
+	}
+	
+	.script {
+		overflow: hidden;
+		background-color: #FFF9EC;
+		float: right;
+		display: block;
+		color: #FFF9EC;
+		text-align: center;
+		padding: 14px 20px;
+		text-decoration: none;
+	}
+	/* Change color on hover */
+	
+	.navbar a:hover {
+		background-color: #FFF9EC;
+		color: #5D2A42;
+	}
+	/* Column container */
+	
+	.row {
+		display: -ms-flexbox;
+		/* IE10 */
+		display: flex;
+		-ms-flex-wrap: wrap;
+		/* IE10 */
+		flex-wrap: wrap;
+	}
+	/* Create two unequal columns that sits next to each other */
+	/* Sidebar/left column */
+	/* Main column */
+	
+	.main {
+		-ms-flex: 100%;
+		/* IE10 */
+		flex: 100%;
+		align-items: center;
+		background-color: #FCB1A6;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-attachment: scroll;
+		padding: 20px;
+	}
+	
+	.main h2 {
+		color: #FFF9EC;
+		font-size: 40px;
+		background-color: #FB6376;
+		border: 8px solid #FB6376;
+		padding: 10px;
+		margin: 10px;
+		width: 750px;
+		position: absolute;
+	}
+	
+	.main h5 {
+		font-family: 'Reenie Beanie';
+		font-size: 20px;
+		color: #FFDCCC;
+		background-color: #5D2A42;
+		border: 4px solid #5D2A42;
+		padding: 6px;
+		margin: 10px;
+		width: 230px;
+	}
+	
+	.main h1 {
+		color: #FB6376;
+		background-color: #FFDCCC;
+		border: 4px solid #FFDCCC;
+		padding: 6px;
+		margin: 5px;
+		width: 200px;
+	}
+	
+	.main a {
+		text-decoration: none;
+	}
+	
+	.breaking news {
+		margin: 10px;
+		position: relative;
+		text-align: center;
+	}
+	/* Footer */
+	
+	.footer {
+		letter-spacing: 8px;
+		padding: 40px;
+		height: 150px;
+		width: 100%;
+		text-align: center;
+		color: #FFF9EC;
+		background: #5D2A42;
+	}
+	/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+	
+	@media screen and (max-width: 700px) {
+		.row {
+			flex-direction: column;
+		}
+	}
+	/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+	
+	@media screen and (max-width: 400px) {
+		.navbar a {
+			float: none;
+			width: 100%;
+		}
+		s
+	}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h1>True Love?</h1> </div>
+	<div class="navbar"> <a href="index.html"> Home </a> <a href="truelove.html"> True Love? </a> <a href="magicalgirls.html"> Magical Girls </a> <a href="tearjerkers.html"> Tearjerkers </a> <a href="https://youtu.be/dQw4w9WgXcQ"> Meme-worthy </a> <a href="aboutme.html"> About me </a> <span class="right">
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth());
+        var yyyy = today.getFullYear();
+        if (mm == 0) {
+            mm = "January";
+        } else if (mm == 1) {
+            mm = "February"
+        } else if (mm == 2) {
+            mm = "March"
+        } else if (mm == 3) {
+            mm = "April"
+        } else if (mm == 4) {
+            mm = "May"
+        } else if (mm == 5) {
+            mm = "June"
+        } else if (mm == 6) {
+            mm = "July"
+        } else if (mm == 7) {
+            mm = "August"
+        } else if (mm == 8) {
+            mm = "September"
+        } else if (mm == 9) {
+            mm = "October"
+        } else if (mm == 10) {
+            mm = "November"
+        } else if (mm == 11) {
+            mm = "December"
+        }
+        today = mm + ' ' + dd + ", " + yyyy;
+        document.write(today);
+    </script>
+</span> </div>
+	<div class="row">
+		<div class="main">
+			<h2>Retro Anime Review | "Kimi Ni Todoke" A Complicatedly Beautiful Rom-Com</h2>
+			<h5>written by someone named king baby duck, February 9, 2017</h5>
+			<div class="breaking news">
+				<a href="http://www.bostonbastardbrigade.com/2017/02/kimi-ni-todoke-review/"> <img src="https://joshsanimeblog.files.wordpress.com/2009/10/kimi-ni-todoke-episode-03-22.jpg" alt="Kimi Ni Todoke" width="1200"></a>
+				<div>
+					<a href="http://www.bostonbastardbrigade.com/2017/02/kimi-ni-todoke-review/">
+						<h1>Read More</h1></a>
+					<br>
+					<br>
+					<br> </div>
+			</div>
+			<h2>Kaguya-sama: Love is War Season 2</h2>
+			<h5>a nefarious review, September 14, 2020</h5>
+			<div class="breaking news">
+				<a href="https://nefariousreviews.com/2020/09/14/kaguya-sama-love-is-war-season-2-anime-review/"> <img src="https://thecinemaholic.com/wp-content/uploads/2019/07/kagayu-sama.jpg" alt="Kaguya-sama" width="1200"></a>
+				<div>
+					<a href="https://nefariousreviews.com/2020/09/14/kaguya-sama-love-is-war-season-2-anime-review/">
+						<h1>Read More</h1></a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<h2>lana b. garcia</h2> </div>
+</body>
+
+</html>

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Shoujo Dreamers</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Reenie+Beanie&family=Sail&display=swap" rel="stylesheet">
+	<style>
+	* {
+		box-sizing: border-box;
+	}
+	/* Style the body */
+	
+	body {
+		font-family: 'Sail', 'Reenie Beanie', 'Nanum Gothic';
+		margin: 0;
+	}
+	/* Header/logo Title */
+	
+	.header {
+		letter-spacing: 6px;
+		padding: 30px;
+		text-align: center;
+		background-color: black;
+		background-image: url(https://cdn.discordapp.com/attachments/884698752353452062/907865530189361212/header.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-attachment: scroll;
+		color: #5D2A42;
+	}
+	/* Increase the font size of the heading */
+	
+	.header h1 {
+		font-size: 100px;
+	}
+	/* Style the top navigation bar */
+	
+	.navbar {
+		overflow: hidden;
+		background-color: #5D2A42;
+	}
+	/* Style the navigation bar links */
+	
+	.navbar a {
+		float: left;
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 14px 20px;
+		text-decoration: none;
+	}
+	/* Right-aligned date */
+	
+	.navbar span.right {
+		float: right;
+		display: block;
+		color: #FFF9EC;
+		text-align: center;
+		padding: 14px 20px;
+	}
+	
+	.script {
+		overflow: hidden;
+		background-color: #FFF9EC;
+		float: right;
+		display: block;
+		color: #FFF9EC;
+		text-align: center;
+		padding: 14px 20px;
+		text-decoration: none;
+	}
+	/* Change color on hover */
+	
+	.navbar a:hover {
+		background-color: #FFF9EC;
+		color: #5D2A42;
+	}
+	/* Column container */
+	
+	.row {
+		display: -ms-flexbox;
+		/* IE10 */
+		display: flex;
+		-ms-flex-wrap: wrap;
+		/* IE10 */
+		flex-wrap: wrap;
+	}
+	/* Create two unequal columns that sits next to each other */
+	/* Sidebar/left column */
+	/* Main column */
+	
+	.main {
+		-ms-flex: 100%;
+		/* IE10 */
+		flex: 100%;
+		text-align: center;
+		align-items: center;
+		background-color: #FCB1A6;
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-attachment: scroll;
+		padding: 20px;
+	}
+	
+	.main h2 {
+		color: #5D2A42;
+		font-size: 40px;
+	}
+	
+	.main h5 {
+		font-family: 'Reenie Beanie';
+		font-size: 20px;
+		color: #5D2A42;
+	}
+	
+	.main p {
+		text-align: justify;
+		font-family: 'Nanum Gothic';
+		color: #5D2A42;
+	}
+	
+	.main a {
+		text-align: justify;
+		font-size: 25px;
+		font-family: 'Nanum Gothic';
+		color: #5D2A42;
+		text-decoration: none;
+	}
+	
+	.breaking news {
+		margin: 10px;
+		position: relative;
+		text-align: center;
+	}
+	/* Footer */
+	
+	.footer {
+		letter-spacing: 8px;
+		padding: 40px;
+		height: 150px;
+		width: 100%;
+		text-align: center;
+		color: #FFF9EC;
+		background: #5D2A42;
+	}
+	/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+	
+	@media screen and (max-width: 700px) {
+		.row {
+			flex-direction: column;
+		}
+	}
+	/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+	
+	@media screen and (max-width: 400px) {
+		.navbar a {
+			float: none;
+			width: 100%;
+		}
+		s
+	}
+	</style>
+</head>
+
+<body>
+	<div class="header">
+		<h1>About Me</h1> </div>
+	<div class="navbar"> <a href="index.html"> Home </a> <a href="truelove.html"> True Love? </a> <a href="magicalgirls.html"> Magical Girls </a> <a href="https://youtu.be/dQw4w9WgXcQ">Meme-worthy</a> <a href="tearjerkers.html"> Tearjerkers </a> <a href="aboutme.html"> About me </a> <span class="right">
+    <script>
+        var today = new Date();
+        var dd = String(today.getDate()).padStart(2, '0');
+        var mm = String(today.getMonth());
+        var yyyy = today.getFullYear();
+        if (mm == 0) {
+            mm = "January";
+        } else if (mm == 1) {
+            mm = "February"
+        } else if (mm == 2) {
+            mm = "March"
+        } else if (mm == 3) {
+            mm = "April"
+        } else if (mm == 4) {
+            mm = "May"
+        } else if (mm == 5) {
+            mm = "June"
+        } else if (mm == 6) {
+            mm = "July"
+        } else if (mm == 7) {
+            mm = "August"
+        } else if (mm == 8) {
+            mm = "September"
+        } else if (mm == 9) {
+            mm = "October"
+        } else if (mm == 10) {
+            mm = "November"
+        } else if (mm == 11) {
+            mm = "December"
+        }
+        today = mm + ' ' + dd + ", " + yyyy;
+        document.write(today);
+    </script>
+</span> </div>
+	<div class="row">
+		<div class="main">
+			<h2>Lana B. Garcia</h2>
+			<h5>some kid from 9-Pinatubo who made this overwhelmingly pink website</h5>
+			<div class="breaking news"> <img src="https://cdn.discordapp.com/attachments/884699095430746122/907996810247802890/unknown.png" alt="me" width="600">
+				<br>
+				<br>
+			</div>
+			<h2>About Me</h2>
+			<h5>is it obvious i crammed this within the last three hours</h5>
+			<div class="breaking news"> <img src="https://wallpaperboat.com/wp-content/uploads/2020/06/03/42361/aesthetic-anime-14.jpg" alt="dis website HAHA" width="1200">
+				<p> Hey, I'm Lana! This website is the embodiment of all my cringy childhood memories. To be clear, I'm not ashamed of the fact that I like shoujo manga/anime NOW--why would I? A lot have some of the most beautiful tales I've ever read! But I was "not like other girls" back then, so I thought it was lame that such a "cool" girl like me would be into something so girly. Kinda dumb, I know. This website is sort of an apology for that?
+					<br>
+					<br> Honestly, I'm not that satisfied on how this turned out. There was so much I wanted to do, and I only have myself to blame for cramming this project TT
+					<br>
+					<br> Oh well, gotta do better next time--thank you so much for reading! </p>
+				<div>
+					<br>
+					<br> </div>
+			</div>
+			<h2>My Socials</h2>
+			<h5>you can contact me from here!</h5>
+			<div class="breaking news"> <a href="maitto:lgarcia2025@clc.pshs.edu.ph">Email: lgarcia2025@clc.pshs.edu.ph</a>
+				<br>
+				<br> <a href="https://www.instagram.com/lololana.arts/">Instagram: lololana.arts</a>
+				<br>
+				<br> <a href="https://github.com/lololana">Github: lololana</a>
+				<br>
+				<br> <img src="https://www.anime-planet.com/images/anime/screenshots/monthly-girls-nozaki-kun-6149-1.jpg" alt="meme" width="900"> </div>
+		</div>
+		<div class="footer">
+			<h2>lana b. garcia</h2> </div>
+	</div>
+</body>
+
+</html>
